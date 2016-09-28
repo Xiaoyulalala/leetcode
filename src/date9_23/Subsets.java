@@ -16,7 +16,7 @@ public class Subsets {
 
         return lists;
     }
-
+//fuck u
     public void helper(int[] nums, int index,List<Integer> currList, List<List<Integer>> lists){
         lists.add(currList);
 

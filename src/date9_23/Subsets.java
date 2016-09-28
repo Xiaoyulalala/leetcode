@@ -1,9 +1,5 @@
 package date9_23;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 /**
  * Created by I334189 on 9/28/2016.
  */
@@ -12,7 +8,12 @@ public class Subsets {
      public List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> lists = new ArrayList<>();
         List<Integer> currList = new ArrayList<>();
+        if(nums == null || nums.length<=0){
+            return null;
+        }
+        
         helper(nums, 0, currList, lists);
+
         return lists;
     }
 
